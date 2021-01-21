@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {ICar} from '../ICar';
 
 @Component({
   selector: 'app-car',
@@ -7,7 +8,7 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class CarComponent implements OnInit {
   @Input()
-  car: any;
+  car: ICar;
   constructor() { }
 
   ngOnInit(): void {
